@@ -1,0 +1,265 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+} 
+:root {
+    font-size: 11px;
+}
+nav {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 1rem;
+    background: rgb(45, 86, 220);
+    color: white;
+    border-radius: 9px;
+    border: none;
+}
+
+/* footer {
+    display: flex;
+    justify-content: space-between;
+} */
+
+#sections a{
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 1em;
+    /* width: 40px;
+    height: 40px; */
+    color:black
+}
+#sections a:hover {
+    background-color: rgb(219, 226, 250);
+    color: black;
+    border-radius: 9px;
+}
+#enquire-button button, #about-info button{
+    box-sizing: border-box;
+    width: 8em;
+    height: 3em;
+}
+
+#home {
+    background-color: rgb(219, 226, 250);
+}
+
+.heading {
+    font-size: 2rem;
+}
+#dec-img{
+    float: right;
+}
+#home #motive {
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#motive p:not(:last-child)::after {
+    content: ".";
+    margin-left: 10px;
+}
+.home-div #explore{
+    width: 10em;
+    height: 3em;
+    margin-right: 25px;
+}
+.home-div #aboutUs{
+    background-color: white;
+    color: rgb(45, 86, 220);
+    width: 6em;
+    height: 3em;
+    border: 1px solid rgb(45, 86, 220);
+}
+
+#about {
+    box-sizing: border-box;
+    /* margin: 20px; */
+    display: flow-root;
+}
+section #cards{
+    display: flex;
+    gap: 12px;
+    float: right;
+}
+
+#cards #decorative-card{
+    font-size: 0.8rem;
+    margin-top: 27px;
+    width: 200px;
+    height: 140px;
+    border: 1px solid rgb(220, 217, 217);
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, rgb(192, 191, 191), rgb(72, 64, 64));
+    color: white;
+    text-align: center;
+}
+#cards #info-card .card{
+    border: 1px;
+    border-radius: 10px;
+    width: 170px;
+    height: 50px;
+}
+#info-card .card p{
+    box-sizing: border-box;
+    font-size: small;
+    margin-left: 8px;
+} 
+
+#course{
+    /* margin: 20px; */
+}
+/* #course-cards{
+    box-sizing: border-box;
+    justify-content: space-between;
+} */
+#course #course-cards {
+    display: flex;
+    gap:12px
+}
+#course #course-cards .course-card{
+    font-size: 0.9rem;
+    border: 0.13em solid rgb(227, 226, 226);
+    border-radius: 1em;
+    width: 100%;
+    height: auto;
+}
+
+.course-card .image img{
+    width: 40px;
+}
+.course-card .image{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.course-card:first-child .image{
+    background-color: rgb(219, 226, 250);
+}
+.course-card:nth-child(2) .image{
+    background-color: rgb(217, 253, 217);
+}
+.course-card:nth-child(3) .image{
+    background-color: rgb(255, 241, 214);
+}
+.course-card:last-child .image{
+    background-color: rgb(254, 225, 230);
+}
+
+.course-card :is(h3, p){
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.course-card button{
+    box-sizing: border-box;
+    padding: 2px;
+    width:90%;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.course-card .button{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+#two-sections{
+    /* margin: 20px; */
+    display: flex;
+    gap: 50%
+}
+
+/* FOOTER */
+footer{
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0;
+    background-color: rgb(9, 9, 54);
+    color: white;
+    flex-wrap: wrap;
+}
+
+footer h2{
+    font-size: 1rem;
+}
+
+footer p, footer a{
+    font-size: 0.8em;
+    color: rgb(193, 192, 192)
+}
+
+footer .footer-div{
+    margin: 2px;
+    padding: 2px;
+    width: 15rem;
+    /* border: 1px solid white; */
+}
+
+footer #info a{
+    display: inline-block;
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+footer #links a{
+    display: block;
+    color: white;
+    margin-top: 1px;
+    margin-bottom: 4px;
+}
+
+footer #newsletter input{
+    font-size: 1rem;
+    width: 100%;
+    height: 16%;
+    border-radius: 5px;
+    margin-bottom: 6px;
+}
+
+footer #newsletter button{
+    box-sizing: border-box;
+    width: 8em;
+    height: 2em;
+}
+
+#copyright{
+    flex-basis: 100%;
+}
+
+#horizontal-line{
+    border: 1px solid rgb(61, 61, 84)
+}
+#copyright p{
+    text-align: center;
+    color: rgb(193, 192, 192)
+}
+
+/* Table */

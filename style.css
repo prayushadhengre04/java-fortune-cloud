@@ -1,0 +1,276 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+} 
+
+button {
+    font-size: 1rem;
+    background: rgb(55, 55, 231);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 2em;
+    font-weight: bold;
+}
+
+/* header */
+#header-div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+nav{
+    padding: 10px;
+}
+nav a{
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 1em;
+    /* width: 40px;
+    height: 40px; */
+    color:black
+}
+nav a:hover {
+    background-color: rgb(219, 226, 250);
+    color: black;
+    border-radius: 9px;
+}
+#enquire-button button{
+    width: 10em;
+    height: 3em;
+}
+
+/* home section */
+#home {
+    box-sizing: border-box;
+    background-color: #e8f2ff;
+    display: flow-root;
+    padding: 40px;
+}
+#home-div #dec-img{
+    float: right;
+}
+#home-div #motive{
+    display: flex;
+    gap: 6px
+}
+#home-div #motive p:not(:last-child)::after{
+    content: ".";
+    margin-left: 6px
+}
+#home-div #main-heading span{
+    display: block;
+    color: rgb(55, 55, 231);
+}
+.home-div .explore{
+    width: 10em;
+    height: 3em;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+.home-div .aboutUs{
+    width: 7em;
+    height: 3em;
+    background-color: white;
+    color: rgb(55, 55, 231);
+    border: 1px solid rgb(55, 55, 231);
+}
+
+/* about section */
+#about{
+    padding: 40px;
+}
+#about-div{
+    display: flex;
+    justify-content: space-between;
+}
+#about-div #about-info{
+    width: 40em;
+    height: auto;
+}
+#about-div .decorative-card{
+    width: 15em;
+    display: grid;
+    place-items: center;     /* Centers horizontally and vertically */
+
+}
+#about-div .decorative-card .classroom{
+    /* border-right: 2px solid rgb(55, 54, 54);
+    border-bottom: 2px solid rgb(46, 44, 44); */
+    /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 7px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgb(192, 191, 191), rgb(72, 64, 64));
+    color: white;
+}
+#about-div .info-card .card{
+    width: 220px;
+    height: 60px;
+    border-radius: 7px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+div.card p{
+    padding-top: 4px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    /* line-height: 5px; */
+}
+div.card .count{
+    font-weight: bold;
+    font-size: 18px;
+}
+#about-info button{
+    width: 10em;
+    height: 3em;
+    margin-top: 15px;
+}
+
+
+/* course */
+#course{
+    padding: 40px;
+}
+.course-cards{
+    display: flex;
+    gap: 10px;
+}
+
+.course-cards .course-card{
+    border: 0.13em solid rgb(227, 226, 226);
+    border-radius: 1em;
+    width: 100%;
+    height: 20em;
+    overflow: hidden;
+}
+
+.course-card .image img{
+    width: 50px;
+}
+.course-card .image{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-card:first-child .image{
+    background-color: rgb(219, 226, 250);
+}
+.course-card:nth-child(2) .image{
+    background-color: rgb(217, 253, 217);
+}
+.course-card:nth-child(3) .image{
+    background-color: rgb(255, 241, 214);
+}
+.course-card:last-child .image{
+    background-color: rgb(254, 225, 230);
+}
+
+.course-cards .course-card .course-detail{
+    padding: 1em;
+    margin-top: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.course-detail button{
+   width: 100%;
+}
+
+/* fees and registration section */
+#fees{
+    padding: 40px;
+}
+#fees .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.details-class{
+    width: 65%;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+.details-class .table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: scroll;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+}
+th{
+    background-color: #d0e1f8;
+    /* border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ; */
+}
+td, th{
+    text-align: left;
+    padding: 16px;
+    border-bottom: 1px solid rgb(150, 148, 148);
+}
+
+/* registration form */
+.register-class{
+    width: 35%;
+}
+label, input, select, textarea{
+    display: block;
+    padding: 0;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+form .form-sections{
+    /* border: 1px solid black; */
+    margin: 10px 10px 20px 0;
+}
+
+input{
+    width: 98%;
+    height: 2em;
+}
+select{
+    width: 98.5%;
+    height: 3em;
+}
+textarea{
+    width: 98%;
+    height: 5em;
+}
+form .form-sections button{
+    width: 100%;
+}
+
+/* footer */
+.footer{
+    background-color: #101d3d;
+    color:white;
+    padding: 40px;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-div {
+    flex: 1;
+}
+#copyright .horizontal-line{
+    border: 1px solid grey
+}
+#copyright {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
